@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamUp! - Community Feed</title>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <nav class="navbar">
+        <h1 class="logo">TeamUp!</h1>
+        <input type="text" class="search-bar" placeholder="Поиск">
+        <a href="#" class="profile-link">Профиль</a>
+    </nav>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <ul>
+                <li><button onclick="loadPage('site1.html')">Главная</button></li>
+                <li><button onclick="loadPage('site2.html')">Календарь</button></li>
+                <li><button onclick="loadPage('site2.html')">Курсы</button></li>
+                <li><button onclick="loadPage('site3.html')">Сообщество</button></li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <iframe id = "iframe" src="site1.html"></iframe>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Privacy Policy | Contact Us | Social Media</p>
+    </footer>
+    <script>
+        function loadPage(page) {
+          document.getElementById('iframe').src = page; // Меняет содержимое iframe
+        }
+    </script>
+</body>
+</html>
