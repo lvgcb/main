@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181b; /* Фон */
+    color: white;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171726; /* Темно-фиолетовый фон */
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+}
+
+.calendar-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: #1A1A2E; /* Темно-синий/фиолетовый */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    background-color: #5757A6; /* Фиолетовый для кнопок */
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.month-title {
+    font-size: 24px;
+    color: #E3E3F0; /* Светлый текст */
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #29294A; /* Темный градиент */
+    height: 80px;
+    color: #B1B1C1; /* Серо-фиолетовый текст */
+}
+
+.event-cell {
+    background-color: #7C7CF0; /* Лиловый для ячеек событий */
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.event-cell div {
+    background-color: rgba(124, 124, 240, 0.9); /* Полупрозрачная заливка */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
